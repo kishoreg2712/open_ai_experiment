@@ -11,12 +11,12 @@ const ChartResults: React.FC<chatDetails> = ({ query, result }) => {
         <div>
             <Row>
                 <div>
-                    <p>Your Query: {query}</p>
+                    <p id='Query'>Your Query: {query}</p>
                 </div>
             </Row>
             <Row>
                 <div>
-                    <p>Result: {result}</p>
+                    <p id='Result'>Result: {result}</p>
                 </div>
             </Row>
         </div>

@@ -8,7 +8,7 @@ interface CustomButtonProps {
 
 const PrimaryButton: React.FC<CustomButtonProps> = ({ label, onClick }) => {
     return (
-      <Button variant="primary" onClick={onClick}>
+      <Button variant="primary" id='Submit_Button' onClick={onClick}>
         {label}
       </Button>
     );

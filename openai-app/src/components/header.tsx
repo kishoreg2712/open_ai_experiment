@@ -16,9 +16,9 @@ const Header: React.FC = () => {
                         <Navbar.Text>Test Generator</Navbar.Text>
                     </Navbar.Brand>
                     <Nav className="mr-auto">
-                        <Nav.Link as={Link} to='/home'>Home</Nav.Link>
-                        <Nav.Link as={Link} to='/features'>Features</Nav.Link>
-                        <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
+                        <Nav.Link as={Link} to='/home' id='home'>Home</Nav.Link>
+                        <Nav.Link as={Link} to='/features' id='features'>Features</Nav.Link>
+                        <Nav.Link as={Link} to='/contact' id='contact'>Contact</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
