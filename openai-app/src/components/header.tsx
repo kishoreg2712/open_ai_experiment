@@ -12,10 +12,10 @@ const Header: React.FC = () => {
                 <Container >
                     <Navbar.Brand as={Link} to='/home'>
                         {/* <img src={reactLogo} className="logo react" alt="React logo"/> */}
-                        <img src={reactLogo} alt="React logo" className="d-inline-block align-top logo.react:hover" />
+                        <img src={reactLogo} alt='React logo' className='d-inline-block align-top logo.react:hover'/>
                         <Navbar.Text>Test Generator</Navbar.Text>
                     </Navbar.Brand>
-                    <Nav className="mr-auto">
+                    <Nav className='mr-auto'>
                         <Nav.Link as={Link} to='/home' id='home'>Home</Nav.Link>
                         <Nav.Link as={Link} to='/features' id='features'>Features</Nav.Link>
                         <Nav.Link as={Link} to='/contact' id='contact'>Contact</Nav.Link>

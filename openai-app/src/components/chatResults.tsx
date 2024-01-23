@@ -1,26 +1,25 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import ResponsiveTable from './responsiveTable';
 
 interface chatDetails {
-    query: string;
+    query: string | undefined
     result: string | undefined;
 }
 
-const ChartResults: React.FC<chatDetails> = ({ query, result }) => {
+const ChatResults: React.FC<chatDetails> = ({ query, result }) => {
+    //const result_data: [] = result;
+    const data = [
+        { ID: 1, 'Query': query, 'Result': result }
+    ];
+    const columns: string[] = ['ID', 'Query', 'Result'];
     return (
-        <div>
+        <Container>
             <Row>
-                <div>
-                    <p id='Query'>Your Query: {query}</p>
-                </div>
+                <ResponsiveTable columns={columns} data={data as unknown as []} />
             </Row>
-            <Row>
-                <div>
-                    <p id='Result'>Result: {result}</p>
-                </div>
-            </Row>
-        </div>
+        </Container>
     );
 };
 
-export default ChartResults;
+export default ChatResults;
